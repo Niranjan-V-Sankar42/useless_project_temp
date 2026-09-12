@@ -3,4 +3,4 @@ uvicorn
 python-multipart
 opencv-python
 numpy
-mediapipe==0.10.21
+mediapipe==0.10.20
