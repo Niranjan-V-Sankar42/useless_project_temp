@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+
+backend/venv/
+backend/__pycache__/
+backend/frames/
+backend/uploads/
+backend/results/
+backend/pose_data.json
+backend/*.mp4
+backend/index.html
+backend/README.md
