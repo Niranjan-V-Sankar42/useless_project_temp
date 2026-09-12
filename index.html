@@ -1,1 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>MohanLean</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <<video
+    id="danceVideo"
+    class="background-video"
+    src="dance.mp4"
+    muted
+    playsinline
+    preload="auto"
+    ></video>
+
+    <div class="overlay"></div>
+    <div class="overlay"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MOHANLEAN™</div>
+
+        <a href="#leaderboard">Leaderboard</a>
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                THE MOST IMPORTANT USELESS TECHNOLOGY
+            </p>
+
+<h1>
+<span class="mohan">MOHAN</span><span class="lean-title">
+<span>L</span><span>E</span><span>A</span><span>N</span>
+</span>
+</h1>
+
+            <h2>
+                How much did he lean?
+            </h2>
+
+            <p class="description">
+                A10ന്റെ ചരിവ് അളക്കാം
+            </p>
+
+
+            <!-- Upload -->
+            <div class="upload-area">
+
+                <input
+                    type="file"
+                    id="videoUpload"
+                    accept="video/*"
+                >
+
+                <label
+                    for="videoUpload"
+                    class="upload-button"
+                >
+                    🎬 Upload Video
+                </label>
+
+                <p id="fileName">
+                    No video selected
+                </p>
+
+            </div>
+
+
+            <!-- Video -->
+            <video
+                id="videoPreview"
+                controls
+            ></video>
+
+
+            <!-- Analyze -->
+            <button
+                id="analyzeButton"
+                class="analyze-button"
+            >
+                ANALYZE THE LEAN
+            </button>
+
+
+            <!-- Loading -->
+            <div
+                id="loading"
+                class="loading"
+            >
+                <div class="spinner"></div>
+                <p>Calculating unnecessary statistics...</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Results -->
+    <section
+        id="results"
+        class="results-section"
+    >
+
+        <p class="eyebrow">SCIENTIFICALLY QUESTIONABLE RESULTS</p>
+
+        <h2>THE LEAN</h2>
+
+
+        <div class="result-container">
+
+            <!-- Winning Frame -->
+            <div class="winning-frame">
+
+                <div class="frame-label">
+                    PEAK LEAN FRAME
+                </div>
+
+                <img
+                    id="resultImage"
+                    src=""
+                    alt="Maximum lean frame"
+                >
+
+            </div>
+
+
+            <!-- Statistics -->
+            <div class="statistics">
+
+                <div class="stat-card">
+
+                    <span>MAXIMUM LEAN</span>
+
+                    <strong id="angleResult">
+                        --°
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span>TIMESTAMP</span>
+
+                    <strong id="timeResult">
+                        --:--
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span>VERDICT</span>
+
+                    <strong id="verdict">
+                        Unknown
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Leaderboard -->
+    <section
+        id="leaderboard"
+        class="leaderboard-section"
+    >
+
+        <p class="eyebrow">THE HALL OF LEAN</p>
+
+        <h2>LEADERBOARD</h2>
+
+        <p class="leaderboard-description">
+            Because apparently we need to know which movie
+            contains the most lean.
+        </p>
+
+
+        <div class="leaderboard">
+
+            <div class="leaderboard-header">
+                <span>#</span>
+                <span>MOVIE / VIDEO</span>
+                <span>MAX LEAN</span>
+            </div>
+
+
+            <div class="leaderboard-row">
+                <span>🥇</span>
+                <span>Legendary Lean</span>
+                <strong>47.82°</strong>
+            </div>
+
+
+            <div class="leaderboard-row">
+                <span>🥈</span>
+                <span>The Lean Returns</span>
+                <strong>43.16°</strong>
+            </div>
+
+
+            <div class="leaderboard-row">
+                <span>🥉</span>
+                <span>Lean Begins</span>
+                <strong>39.71°</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>MOHANLEAN™</h3>
+
+        <p>
+            Making productivity less productive since 2026.
+        </p>
+
+        <p class="footer-small">
+            No Mohanlals were scientifically harmed in this research.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
