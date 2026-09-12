@@ -1,7 +1,14 @@
 venv/
 **/venv/
+venv312/
+**/venv312/
 
 __pycache__/
 *.pyc
 
 .vscode/
+
+backend/frames/
+backend/uploads/
+backend/results/
+backend/pose_data.json

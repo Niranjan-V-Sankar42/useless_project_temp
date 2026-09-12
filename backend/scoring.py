@@ -2,6 +2,7 @@ import json
 import math
 import os
 import shutil
+import cv2
 
 
 def calculate_torso_lean(landmarks):

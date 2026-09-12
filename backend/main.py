@@ -1,5 +1,6 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
 import os
 import shutil
 import json
@@ -10,6 +11,14 @@ from scoring import analyze_score
 
 
 app = FastAPI(title="MohanLean API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+app.mount("/results", StaticFiles(directory="results"), name="results")
 
 os.makedirs("results", exist_ok=True)
 

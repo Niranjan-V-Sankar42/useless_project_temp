@@ -119,12 +119,11 @@ analyzeButton.addEventListener("click", async function () {
         ========================= */
 
         if (data.max_lean_frame) {
-
-            resultImage.src =
-                "http://127.0.0.1:8000/" +
-                data.max_lean_frame;
-
-        }
+          resultImage.src =
+            "http://127.0.0.1:8000/" +
+            data.max_lean_frame +
+            "?t=" + Date.now();
+}
 
 
         /* =========================
@@ -159,34 +158,34 @@ analyzeButton.addEventListener("click", async function () {
 
     }
 
-});
+}); 
 /* =========================
    LEAN VERDICT
 ========================= */
 
 function getVerdict(angle) {
 
-    if (angle < 10) {
+    if (angle < 2) {
         return "Standing normally";
     }
 
-    if (angle < 20) {
+    if (angle < 3) {
         return "Mild Lean";
     }
 
-    if (angle < 30) {
+    if (angle < 4) {
         return "Respectable Lean";
     }
 
-    if (angle < 40) {
+    if (angle < 5) {
         return "Serious Lean";
     }
 
-    if (angle < 50) {
+    if (angle < 7) {
         return "MASSIVE LEAN";
     }
 
-    return "ABSOLUTE CINEMA";
+    return "ABSOLUTE AYYAPPAA";
 }
 const danceVideo = document.getElementById("danceVideo");
 
